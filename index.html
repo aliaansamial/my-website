@@ -3,43 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aliaan Samial</title>
+  <title>Aliaan Samial | IT Student</title>
+  <meta name="description" content="Portfolio of Aliaan Samial, IT student at Uxbridge College.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Aliaan Samial</h1>
-    <p>IT student at Uxbridge College. I like to discover things.</p>
+  <div class="bg"><span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span></div>
+
+  <header class="nav">
+    <a class="logo" href="#top">AS<span>.</span></a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#learning">Learning</a>
+      <a href="#projects">Projects</a>
+      <a href="#roadmap">Roadmap</a>
+    </nav>
+    <button id="theme" aria-label="Toggle light and dark theme">◐</button>
   </header>
 
-  <main>
-    <section>
-      <h2>About me</h2>
-      <p>I'm learning to build things with code and I want to understand how computers really work.</p>
+  <main id="top">
+    <section class="hero reveal">
+      <p class="eyebrow">Hi, I’m</p>
+      <h1>Aliaan <span class="grad">Samial</span></h1>
+      <p class="typed-line">An IT student into <span id="typed"></span><span class="cursor"></span></p>
+      <div class="cta">
+        <a class="btn primary" href="#projects">See my work</a>
+        <a class="btn" href="https://github.com/aliaansamial">GitHub</a>
+      </div>
     </section>
 
-    <section>
-      <h2>What I'm learning</h2>
-      <ul>
-        <li>HTML and CSS</li>
-        <li>Git and GitHub</li>
-        <li>Python</li>
-      </ul>
+    <section id="about" class="reveal">
+      <h2>About <span>me</span></h2>
+      <p class="lead">I’m studying IT at Uxbridge College. I like to discover things, break them, and work out how they tick. My goal is to learn what a really good programmer knows, one project at a time.</p>
     </section>
 
-    <section>
-      <h2>Projects</h2>
-      <ul>
-        <li>
-          <a href="https://github.com/aliaansamial/my-first-project">Command-line to-do app</a>
-          (Python)
-        </li>
-      </ul>
+    <section id="learning" class="reveal">
+      <h2>What I’m <span>learning</span></h2>
+      <div class="grid">
+        <article class="card"><span class="badge now">Learning now</span><h3>HTML &amp; CSS</h3><p>Building and styling pages, including the one you’re looking at.</p></article>
+        <article class="card"><span class="badge now">Learning now</span><h3>Git &amp; GitHub</h3><p>Version control, commits, branches, and publishing code online.</p></article>
+        <article class="card"><span class="badge now">Learning now</span><h3>Python</h3><p>Writing small programs and learning how code is structured.</p></article>
+        <article class="card"><span class="badge next">Next up</span><h3>Data structures</h3><p>Lists, dictionaries, sets, and how to choose between them.</p></article>
+        <article class="card"><span class="badge next">Next up</span><h3>Testing</h3><p>Writing tests so my code proves it works.</p></article>
+        <article class="card"><span class="badge next">Next up</span><h3>SQL &amp; databases</h3><p>Storing and querying data properly.</p></article>
+      </div>
+    </section>
+
+    <section id="projects" class="reveal">
+      <h2>My <span>projects</span></h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Command-line to-do app</h3>
+          <p>A Python app to add, list, complete and delete tasks, saved to a JSON file.</p>
+          <a class="link" href="https://github.com/aliaansamial/my-first-project">View on GitHub →</a>
+        </article>
+        <article class="card">
+          <h3>This website</h3>
+          <p>Hand-written HTML, CSS and JavaScript with no frameworks, hosted free on GitHub Pages.</p>
+          <a class="link" href="https://github.com/aliaansamial/my-website">View on GitHub →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="roadmap" class="reveal">
+      <h2>My <span>roadmap</span></h2>
+      <div class="timeline">
+        <div class="step"><h3>Now</h3><p>HTML, CSS, Git and Python fundamentals.</p></div>
+        <div class="step"><h3>Next</h3><p>Data structures, algorithms and automated testing.</p></div>
+        <div class="step"><h3>Later</h3><p>Databases, networking and how operating systems work.</p></div>
+        <div class="step"><h3>Goal</h3><p>Understand computers from the ground up and build things I’m proud of.</p></div>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Aliaan Samial</p>
+    <p>© <span id="year">2026</span> Aliaan Samial · Built by hand with HTML, CSS and JS</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
